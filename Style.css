@@ -11,5 +11,6 @@ body {
 }
 
 .container {
-    
+    background-color: white;
+    width: 40vw;
 }
