@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Hanken Grotesk";
 }
 
 body {
@@ -13,4 +14,94 @@ body {
 .container {
     background-color: white;
     width: 40vw;
+    border-radius: 15px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.result, .summary {
+    padding: 20px;
+    border-radius: 15px;
+}
+.result h1, .summary h1 {
+    font-size: larger;
+}
+
+.result {
+    background-color: #593CF8;
+    text-align: center;
+}
+
+.result h1 {
+    color: #C9C3FF;
+}
+
+.summary {
+    background-color: white;
+    text-align: left;
+}
+
+.summary h1 {
+    color: #41455B;
+}
+
+.summary h2 {
+    font-size: 18px;
+}
+
+.reaction, .memory , .verbal , .visual {
+    height: 10%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reaction {
+    background-color: #FFF6F7;
+    color: #FC5454;
+}
+.memory {
+    background-color: #FFFAF4;
+    color: #FDBF4A;
+}
+.verbal {
+    background-color: #F2FDF9;
+    color: #00BA8E;
+}
+.visual {
+    background-color: #F4F4FE;
+    color: #1124D2;
+}
+
+.score , .name {
+    display: flex;
+}
+
+.score h3 {
+    color: #41455B;
+}
+
+.score h4 {
+    color: rgb(159, 159, 159);
+}
+
+button {
+    width: 100%;
+    border-radius: 40px;
+    padding: 15px;
+    border: none;
+    background-color: #303B59;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #593CF8;
+    transition: 0.5s;
 }
