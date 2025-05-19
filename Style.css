@@ -5,19 +5,22 @@
 
 body {
     background-color: #ECF2FF;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1;
 }
 
 .container {
+    /* max-height: 100vh; */
+    height: fit-content;
     background-color: white;
     width: 40vw;
     border-radius: 15px;
-    height: 80vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
 }
 
 .result, .summary {
@@ -31,10 +34,58 @@ body {
 .result {
     background-color: #593CF8;
     text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .result h1 {
     color: #C9C3FF;
+}
+
+.result h3 {
+    color: white;
+}
+
+.result p {
+    color: #a39eff;
+    font-weight: 700;
+}
+
+.pie-result {
+    background: linear-gradient(
+        to bottom,
+        #4d22c9,
+        #4835f1,
+        #593cf8
+    );
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pie-result h2 {
+    color: white;
+    font-size: 80px;
+    
+}
+
+.pie-result h2,h3 {
+    margin: 0px;
+}
+
+.pie-result h3 {
+    color: #897aff;
+}
+
+#result-remark {
+    margin-top: 10px;
+    font-size: 30px;
 }
 
 .summary {
@@ -51,7 +102,7 @@ body {
 }
 
 .reaction, .memory , .verbal , .visual {
-    height: 10%;
+    height: 50px;
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 10px;
@@ -79,6 +130,8 @@ body {
 
 .score , .name {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .score h3 {
@@ -99,6 +152,7 @@ button {
     font-weight: 500;
     font-size: 18px;
     transition: 0.5s;
+    margin-top: 20px;
 }
 
 button:hover {
